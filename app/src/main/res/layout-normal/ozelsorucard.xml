@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="100dp"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ozelLayout"
+        android:layout_width="match_parent"
+        android:paddingVertical="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_red">
+
+        <TextView
+            android:id="@+id/OzelSoruText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="10dp"
+            android:text="Doğru"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/soruEkleFab"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/soruSilFab"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_delete"
+            app:backgroundTint="@color/red"
+            app:elevation="35dp"
+            app:fabCustomSize="45dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="30dp"
+            app:rippleColor="@color/white"
+            app:useCompatPadding="false" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

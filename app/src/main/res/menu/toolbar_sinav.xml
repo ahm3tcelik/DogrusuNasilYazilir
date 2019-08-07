@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_changeisaret"
+        android:icon="@drawable/isaretsiz"
+        android:title="Soruyu İşaretle"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_cikis"
+        android:icon="@drawable/cikis"
+        android:title="Ana Menüye Dön"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_sharesoru"
+        app:showAsAction="collapseActionView|never"
+        android:title="Soruyu Paylaş" />
+</menu>

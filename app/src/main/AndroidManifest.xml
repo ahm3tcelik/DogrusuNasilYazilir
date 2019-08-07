@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ahmetc.yazimkurallari">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/yazim_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/yazim_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ahmetc.yazimkurallari.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <receiver
+            android:name="com.ahmetc.yazimkurallari.Receivers.NotificationHolder"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name="com.ahmetc.yazimkurallari.HedefActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ahmetc.yazimkurallari.OzelSorularActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ahmetc.yazimkurallari.IstatistiklerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ahmetc.yazimkurallari.SinavActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ahmetc.yazimkurallari.SoruDetayActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ahmetc.yazimkurallari.SorularActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ahmetc.yazimkurallari.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.ahmetc.yazimkurallari.Receivers.NotificationReceiver">
+            <intent-filter>
+                <action android:name="DOGRU" />
+                <action android:name="YANLIS" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

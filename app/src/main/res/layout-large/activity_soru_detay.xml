@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/soruDetayToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detayYanlisImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yanlis" />
+
+        <TextView
+            android:id="@+id/detayYanlis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Orjinal"
+            android:textColor="@color/red"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/detayDogruImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dogru" />
+
+        <TextView
+            android:id="@+id/detayDogru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Orijinal"
+            android:textColor="@color/green"
+            android:textSize="23sp"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/soruDogruSayisiYazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/square_yesil"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Yapılan doğru sayısı : 10"
+        android:textColor="@color/green"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/soruYanlisSayisiYazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/square_kirmizi"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Yapılan yanlış sayısı : 10"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/soruIsaretYazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="İşareti Kaldır : "
+            android:layout_marginRight="5dp"
+            android:ems="6"
+            android:textSize="27sp"
+            android:textColor="@color/teal"
+            android:layout_marginEnd="5dp" />
+
+        <ImageButton
+            android:id="@+id/soruIsaretButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="?selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/isaretsiz" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/soruGeri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="sans-serif-medium"
+        android:text="Önceki Sayfaya Dön"
+        android:textColor="@color/indigo"
+        android:textSize="25sp" />
+
+</LinearLayout>

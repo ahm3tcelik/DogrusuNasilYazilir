@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradientpurple">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarHedef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Hedef Belirle"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/fifthfragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_beyaz"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Belirlediğiniz sıklıkta bildirim ekranında size sorular yöneltir."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:foregroundGravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/square_beyaz"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/scanValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:textSize="25sp"
+            android:layout_marginEnd="5dp"
+            android:hint="10"
+            android:textColor="@color/white"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinnerSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_white"
+            android:onClick="buttonIptal"
+            android:padding="10dp"
+            android:text="IPTAL ET"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_white"
+            android:onClick="buttonOnayla"
+            android:padding="10dp"
+            android:text="ONAYLA"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showNotification"
+        android:text="ÖN İZLE"
+        android:textSize="30sp"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/ripple_white"/>
+
+</LinearLayout>
