@@ -2,7 +2,7 @@
 Doğrusu Nasıl Yazılır Android Native App
 
 
-![](https://github.com/amdhst/DogrusuNasilYazilir/blob/master/app/src/main/res/mipmap-xxhdpi/logo.png)
+![](https://github.com/ahm3tcelik/DogrusuNasilYazilir/blob/master/app/src/main/res/mipmap-xxhdpi/logo.png)
 
 Türkçe'yi hem gerçek hayatta doğru kullanın hem de LGS, TYT, KPSS sınavlarında.
 Yazım kurallarını konu alan ve yazımı en çok karıştırılan 750+ kelimeyi sizler için 6 başlık altında topladık. 
